@@ -32,8 +32,8 @@ const projects = [
     src: "water.jpg",
     link: "https://i.postimg.cc/cL8Jmh1F/image.png",
     color: "#fff",
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://curly-space-broccoli-v667jg65j7xqcv5r.github.dev/",
+    liveLink: "https://curly-space-broccoli-v667jg65j7xqcv5r.github.dev/",
   },
   {
     title: "Autocad House Project",

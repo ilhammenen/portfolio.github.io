@@ -110,7 +110,7 @@ const profile = {
               loop
               playsInline
             >
-              <source src="src/assets/0524 (1).mp4" type="video/mp4" />
+              <source src="src\assets\0524 (1).mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-black bg-opacity-40 pointer-events-none" />
           </div>
