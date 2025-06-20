@@ -32,8 +32,8 @@ const projects = [
     src: "water.jpg",
     link: "https://i.postimg.cc/cL8Jmh1F/image.png",
     color: "#fff",
-    githubLink: "https://github.com/ilhammenen/cpp",
-    liveLink: "https://github.com/ilhammenen/cpp",
+    githubLink: "https://github.com/ilhammenen/cpp.git",
+    liveLink: "https://github.com/ilhammenen/cpp.git",
   },
   {
     title: "Autocad House Project",
