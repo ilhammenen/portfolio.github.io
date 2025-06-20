@@ -21,7 +21,7 @@ const projects = [
     src: "tree.jpg",
     link: "https://i.postimg.cc/kgkmgdmc/image.png",
     color: "#8f89ff",
-    githubLink: "#",
+    githubLink: "https://github.com/ilhammenen/spa",
     liveLink:
       "https://webapp.utem.edu.my/student/bitc/b032410808/project/loginform.php",
   },
@@ -32,8 +32,8 @@ const projects = [
     src: "water.jpg",
     link: "https://i.postimg.cc/cL8Jmh1F/image.png",
     color: "#fff",
-    githubLink: "https://curly-space-broccoli-v667jg65j7xqcv5r.github.dev/",
-    liveLink: "https://curly-space-broccoli-v667jg65j7xqcv5r.github.dev/",
+    githubLink: "https://github.com/ilhammenen/cpp",
+    liveLink: "https://github.com/ilhammenen/cpp",
   },
   {
     title: "Autocad House Project",
