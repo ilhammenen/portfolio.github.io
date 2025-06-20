@@ -21,7 +21,7 @@ const projects = [
     src: "tree.jpg",
     link: "https://i.postimg.cc/kgkmgdmc/image.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/ilhammenen/spa",
+    githubLink: "https://github.com/ilhammenen/spa.git",
     liveLink:
       "https://webapp.utem.edu.my/student/bitc/b032410808/project/loginform.php",
   },
