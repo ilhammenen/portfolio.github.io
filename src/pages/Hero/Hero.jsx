@@ -6,6 +6,7 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
+import bgVideo from "@/assets/bg-video.mp4"; // ✅ Correct video import
 
 const GridBackground = () => {
   return (
@@ -101,18 +102,17 @@ const profile = {
           className="hero min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-0 hero-section-padding"
           style={{ paddingTop: "var(--hero-padding-top, 0)" }}
         >
-          {/* 🎥 Background Video */}
+          {/* 🎥 Background Video ✅ */}
           <div className="absolute inset-0 w-full h-full z-0">
             <video
-  className="w-full h-full object-cover opacity-30"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source src="/src/assets/hero-video.mp4" type="video/mp4" />
-</video>
-
+              className="w-full h-full object-cover opacity-30"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={bgVideo} type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-black bg-opacity-40 pointer-events-none" />
           </div>
 
