@@ -6,6 +6,7 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
+import bgVideo from "@/assets/bg-video.mp4"; // ✅ Local video file
 
 const GridBackground = () => {
   return (
@@ -25,7 +26,7 @@ const GridBackground = () => {
 export default function Hero() {
   const words = [
     "Full-Stack Developer & UI/UX",
-    "JavaScript Developer ",
+    "JavaScript Developer",
     "Learning Computer Networking",
     "Designer & Developer",
   ];
@@ -35,9 +36,9 @@ const profile = {
     name: 'Ilham Ramli',
     title: 'Full-Stack Developer | Designer Enthusiast | Problem Solver',
     skills: [
-        'React', 'NextJS', ' problemSolver: true, Redux', 'Express',
-        'MySQL', 'MariaDB', 'Docker', 'AWS', 'TypeScript'
-, 'Git', 'Linux', 'UI/UX developer'
+        'React', 'NextJS', 'Redux', 'Express',
+        'MySQL', 'MariaDB', 'Docker', 'AWS', 'TypeScript',
+        'Git', 'Linux', 'UI/UX developer'
     ],
     hardWorker: true,
     quickLearner: true,
@@ -47,7 +48,7 @@ const profile = {
         return (
             this.hardWorker &&
             this.problemSolver &&
-            this.skills.length >= 5 &&
+            this.skills.length >= 5
         );
     }
 };
@@ -62,7 +63,7 @@ const profile = {
         0%, 100% { opacity: 0.1; }
         50% { opacity: 0.3; }
       }
-      @media screen and (width: 1366px) and (height: 768px), 
+      @media screen and (width: 1366px) and (height: 768px),
              screen and (width: 1367px) and (height: 768px),
              screen and (width: 1368px) and (height: 769px) {
         .hero { padding-top: 12rem !important; }
@@ -92,7 +93,7 @@ const profile = {
       document.head.removeChild(style);
       window.removeEventListener("resize", checkResolution);
     };
-  }, [code]);
+  }, []);
 
   return (
     <>
@@ -101,23 +102,21 @@ const profile = {
           className="hero min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-0 hero-section-padding"
           style={{ paddingTop: "var(--hero-padding-top, 0)" }}
         >
-          {/* 🎥 Background Video */}
+          {/* ✅ Background Video */}
           <div className="absolute inset-0 w-full h-full z-0">
             <video
-  className="w-full h-full object-cover opacity-30"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source src="/src/assets/hero-video.mp4" type="video/mp4" />
-</video>
-
+              className="w-full h-full object-cover opacity-30"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={bgVideo} type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-black bg-opacity-40 pointer-events-none" />
           </div>
 
           <GridBackground />
-
           <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
             <Meteors number={10} />
           </div>
@@ -150,36 +149,18 @@ const profile = {
                 JavaScript lover 🚀 | Html creator 🔧 | Crafting frameworks and coding the future 💻✨
               </p>
 
-              {/* 👇 Social Icons */}
+              {/* 🌐 Social Links */}
               <div className="flex gap-5 items-center mb-8">
-                <a
-                  href="https://github.com/ilhammenen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="https://github.com/ilhammenen" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                   <i className="fab fa-github text-2xl"></i>
                 </a>
-                <a
-                  href="mailto:ilhammenen11@gmail.com"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="mailto:ilhammenen11@gmail.com" className="text-gray-400 hover:text-white transition">
                   <i className="fas fa-envelope text-2xl"></i>
                 </a>
-                <a
-                  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                   <i className="fab fa-linkedin text-2xl"></i>
                 </a>
-                <a
-                  href="https://www.instagram.com/ilhammenen?igsh=bmtqa2kwbnRiN3dy&utm_source=qr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="https://www.instagram.com/ilhammenen?igsh=bmtqa2kwbnRiN3dy&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                   <i className="fab fa-instagram text-2xl"></i>
                 </a>
               </div>
@@ -194,6 +175,7 @@ const profile = {
               </div>
             </div>
 
+            {/* 💻 Code Preview */}
             <div className="w-full lg:w-1/2">
               <div className="gradient-border">
                 <div className="code-window bg-[#091121]">
