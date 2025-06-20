@@ -6,6 +6,7 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
+import bgVideo from "https://streamable.com/zfsh18";
 
 const GridBackground = () => {
   return (
@@ -110,7 +111,7 @@ const profile = {
               loop
               playsInline
             >
-              <source src="src\assets\0524 (1).mp4" type="video/mp4" />
+              <source src={bgVideo} type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-black bg-opacity-40 pointer-events-none" />
           </div>
@@ -151,34 +152,16 @@ const profile = {
 
               {/* 👇 Social Icons */}
               <div className="flex gap-5 items-center mb-8">
-                <a
-                  href="https://github.com/ilhammenen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="https://github.com/ilhammenen" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                   <i className="fab fa-github text-2xl"></i>
                 </a>
-                <a
-                  href="mailto:ilhammenen11@gmail.com"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="mailto:ilhammenen11@gmail.com" className="text-gray-400 hover:text-white transition">
                   <i className="fas fa-envelope text-2xl"></i>
                 </a>
-                <a
-                  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                   <i className="fab fa-linkedin text-2xl"></i>
                 </a>
-                <a
-                  href="https://www.instagram.com/ilhammenen?igsh=bmtqa2kwbnRiN3dy&utm_source=qr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition"
-                >
+                <a href="https://www.instagram.com/ilhammenen?igsh=bmtqa2kwbnRiN3dy&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                   <i className="fab fa-instagram text-2xl"></i>
                 </a>
               </div>
