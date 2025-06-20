@@ -104,14 +104,15 @@ const profile = {
           {/* 🎥 Background Video */}
           <div className="absolute inset-0 w-full h-full z-0">
             <video
-              className="w-full h-full object-cover opacity-30"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src="https://streamable.com/zfsh18" type="video/mp4" />
-            </video>
+  className="w-full h-full object-cover opacity-30"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source src="/src/assets/hero-video.mp4" type="video/mp4" />
+</video>
+
             <div className="absolute inset-0 bg-black bg-opacity-40 pointer-events-none" />
           </div>
 
